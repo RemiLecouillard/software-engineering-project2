@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<!--
+  ~ Copyright (c)
+  ~  ENSICAEN, École publique d'ingénieurs et centres de recherche, Caen, FRANCE.
+  ~  https://www.ensicaen.fr
+  ~
+  ~ This file is licenced under the MIT License.
+  ~
+  ~ Permission is hereby granted, free of charge, to any person obtaining a copy
+  ~ of this software and associated documentation files (the "Software"), to deal
+  ~ in the Software without restriction, including without limitation the rights
+  ~ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+  ~ copies of the Software, and to permit persons to whom the Software is
+  ~ furnished to do so, subject to the following conditions:
+  ~
+  ~ The above copyright notice and this permission notice shall be included in
+  ~ all copies or substantial portions of the Software.
+  ~
+  ~ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  ~ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  ~ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+  ~ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  ~ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+  ~ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+  ~ THE SOFTWARE.
+  -->
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" id="AnchorPane" maxHeight="810.0" maxWidth="1064.0" minHeight="257.0"
+            minWidth="532.0" prefHeight="257.0" prefWidth="532.0" xmlns="http://javafx.com/javafx/8.0.121"
+            fx:controller="fr.ensicaen.ecole.genielogiciel.mvp.client.view.ConnectionView">
+    <children>
+        <Button layoutX="167.0" layoutY="143.0" mnemonicParsing="false" onAction="#handleButtonStartAction"
+                prefHeight="82.0" prefWidth="199.0" text="%connection.button.start">
+            <font>
+                <Font name="System Bold" size="33.0"/>
+            </font>
+        </Button>
+        <TextField fx:id="_ipAddressTextfield" alignment="CENTER" layoutX="161.0" layoutY="56.0" onAction="#checkIPAddress"
+                   prefHeight="44.0" prefWidth="210.0" promptText="%connection.button.ipaddress">
+            <font>
+                <Font size="24.0"/>
+            </font>
+        </TextField>
+    </children>
+</AnchorPane>
