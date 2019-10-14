@@ -1,0 +1,15 @@
+# User-specific stuff:
+
+*~
+
+# IntelliJ
+/out/
+.idea/libraries/
+.idea/workspace.xml
+.idea/gradle.xml
+.idea/uiDesigner.xml
+.idea/sonarlint/
+
+# Gradle.gitignore
+.gradle
+/build/
